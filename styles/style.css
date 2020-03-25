@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h1 {
+    font-family: 'Lobster', cursive;
+    padding: 20px;
+}
+input {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 60%;
+    background-color: #fff4e9;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;  
+ }
+ input::placeholder {
+     font-family: 'Lobster', cursive;
+ }
+.container {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    margin-top: 30px;
+}
+.gallery img {
+    margin: 10px;
+}
+
+.sb-items {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1780px) {
+.container {
+    width: 50%;
+  }
+}
+@media (max-width: 1779px) {
+  .container {
+    max-width: 60%;
+  }
+}
+@media (max-width: 1488px) {
+  .container {
+    max-width: 70%;
+  }
+
+}
+
+@media (max-width: 565px) {
+  .container {
+    max-width: 100%;
+  }
+  .sb-caption {
+      font-size: 70%;
+  }
+}
+@media (max-width: 460px) {
+  .container {
+    max-width: 100%;
+  }
+  .sb-caption {
+      font-size: 70%;
+  }
+  input {
+      width: 55%;
+  }
+}
+
+
